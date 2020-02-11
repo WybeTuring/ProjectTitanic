@@ -4,7 +4,6 @@
  * @author: Kweku Andoh Yamoah(71712022)
  */
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -21,7 +20,7 @@ import java.util.Arrays;
  */
 public class Observatory {
     String nameofObservatory, nameofCountryObserv, yearSiteGalam;
-    Galamsey[] listGalamObserv = new ArrayList[2000000000];
+    Galamsey[] listGalamObserv = new Galamsey[2000000000]; //The system will run out of ram before this size is reached
 
     /**
      * Default Constructor
@@ -43,43 +42,83 @@ public class Observatory {
         this.listGalamObserv = listGalamObserv;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getNameofObservatory() {
         return nameofObservatory;
     }
 
+    /**
+     *
+     * @param nameofObservatory
+     * @return
+     */
     public Observatory setNameofObservatory(String nameofObservatory) {
         this.nameofObservatory = nameofObservatory;
         return this;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getNameofCountryObserv() {
         return nameofCountryObserv;
     }
 
+    /**
+     *
+     * @param nameofCountryObserv
+     * @return
+     */
     public Observatory setNameofCountryObserv(String nameofCountryObserv) {
         this.nameofCountryObserv = nameofCountryObserv;
         return this;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getYearSiteGalam() {
         return yearSiteGalam;
     }
 
+    /**
+     *
+     * @param yearSiteGalam
+     * @return
+     */
     public Observatory setYearSiteGalam(String yearSiteGalam) {
         this.yearSiteGalam = yearSiteGalam;
         return this;
     }
 
+    /**
+     *
+     * @return
+     */
     public Galamsey[] getListGalamObserv() {
         return listGalamObserv;
     }
 
+    /**
+     *
+     * @param listGalamObserv
+     * @return
+     */
     public Observatory setListGalamObserv(Galamsey[] listGalamObserv) {
         this.listGalamObserv = listGalamObserv;
         return this;
     }
 
-
+    /**
+     *
+     * @param o
+     * @return
+     */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -91,11 +130,10 @@ public class Observatory {
                 Arrays.equals (listGalamObserv, that.listGalamObserv);
     }
 
-    @Override
-    public int hashCode() {
-        return 0;
-    }
-
+    /**
+     *
+     * @return
+     */
     @Override
     public String toString() {
         return "Observatory{" +
@@ -106,7 +144,51 @@ public class Observatory {
                 '}';
     }
 
-    public int  largeGalamValRecorded(){
+    /**
+     *
+     * @param value
+     * @return
+     */
+    private int returnCount(int value){
+        int count = 0;
+        for(int i = 0; i < listGalamObserv.length-1; i++){
+            if(listGalamObserv[i].getColourValue () == value){ count ++ ;}
+        }
 
+        return count;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public int countofGalamGreen(){
+        return  returnCount (1);
+
+    }
+
+    /**
+     *
+     * @return
+     */
+    public int countofGalamYellow(){
+        return  returnCount (2);
+
+    }
+
+    /**
+     *
+     * @return
+     */
+    public int countofGalamBrown(){
+        return  returnCount (3);
+    }
+
+    /**
+     *
+     * @return
+     */
+    public int largestGalamValueRec(){
+        return Math.max (countofGalamGreen (),Math.max (this.countofGalamYellow (),this.countofGalamBrown ()));
     }
 }
