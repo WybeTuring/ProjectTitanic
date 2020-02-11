@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eab405b8-7374-4096-9ff7-b5c16548fb0b" name="Default Changelist" comment="Creation of Observatory Class for Version 1">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="eab405b8-7374-4096-9ff7-b5c16548fb0b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Observatory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Observatory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,13 +114,20 @@
       <option name="project" value="LOCAL" />
       <updated>1581385142192</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Creation of Observatory Class for Version 1">
+      <created>1581385997688</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1581385997688</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Creation of Observatory Class for Version 1" />
     <MESSAGE value="Creation of Observatory Class for Version 1, Karl see" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation of Observatory Class for Version 1, Karl see" />
+    <MESSAGE value="Creation of Observatory Class for Version 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation of Observatory Class for Version 1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="103" key="#Project_Structure" timestamp="1581385370440">
@@ -132,18 +138,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1581379941827" />
-    <state x="385" y="39" key="CommitChangelistDialog2" timestamp="1581385140499">
+    <state x="385" y="39" key="CommitChangelistDialog2" timestamp="1581385995539">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="385" y="39" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1581385140499" />
-    <state x="147" y="86" key="DiffContextDialog" timestamp="1581385094447">
+    <state x="385" y="39" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1581385995539" />
+    <state x="147" y="86" key="DiffContextDialog" timestamp="1581385944776">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="147" y="86" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1581385094447" />
-    <state x="361" y="178" key="Vcs.Push.Dialog.v2" timestamp="1581385146333">
+    <state x="147" y="86" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1581385944776" />
+    <state x="361" y="178" key="Vcs.Push.Dialog.v2" timestamp="1581386003371">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="178" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1581385146333" />
+    <state x="361" y="178" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1581386003371" />
     <state x="465" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1581377859589">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
