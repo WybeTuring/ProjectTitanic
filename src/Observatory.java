@@ -79,15 +79,21 @@ public class Observatory {
         return this;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Observatory)) return false;
         Observatory that = (Observatory) o;
-        return getNameofObservatory ().equals (that.getNameofObservatory ()) &&
-                getNameofCountryObserv ().equals (that.getNameofCountryObserv ()) &&
-                getYearSiteGalam ().equals (that.getYearSiteGalam ()) &&
-                Arrays.equals (getListGalamObserv (), that.getListGalamObserv ());
+        return nameofObservatory.equals (that.nameofObservatory) &&
+                nameofCountryObserv.equals (that.nameofCountryObserv) &&
+                yearSiteGalam.equals (that.yearSiteGalam) &&
+                Arrays.equals (listGalamObserv, that.listGalamObserv);
+    }
+
+    @Override
+    public int hashCode() {
+        return 0;
     }
 
     @Override
