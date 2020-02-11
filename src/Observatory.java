@@ -5,6 +5,7 @@
  */
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Observatory class with fields, methods and constructor to store and retrieve
@@ -21,6 +22,26 @@ import java.util.ArrayList;
 public class Observatory {
     String nameofObservatory, nameofCountryObserv, yearSiteGalam;
     Galamsey[] listGalamObserv = new ArrayList[2000000000];
+
+    /**
+     * Default Constructor
+     */
+    public Observatory() {
+    }
+
+    /**
+     * Overloaded Constructor
+     * @param nameofObservatory, String
+     * @param nameofCountryObserv, String
+     * @param yearSiteGalam, String
+     * @param listGalamObserv, Galamsey[]
+     */
+    public Observatory(String nameofObservatory, String nameofCountryObserv, String yearSiteGalam, Galamsey[] listGalamObserv) {
+        this.nameofObservatory = nameofObservatory;
+        this.nameofCountryObserv = nameofCountryObserv;
+        this.yearSiteGalam = yearSiteGalam;
+        this.listGalamObserv = listGalamObserv;
+    }
 
     public String getNameofObservatory() {
         return nameofObservatory;
@@ -58,23 +79,28 @@ public class Observatory {
         return this;
     }
 
-    /**
-     * Default Constructor
-     */
-    public Observatory() {
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Observatory)) return false;
+        Observatory that = (Observatory) o;
+        return getNameofObservatory ().equals (that.getNameofObservatory ()) &&
+                getNameofCountryObserv ().equals (that.getNameofCountryObserv ()) &&
+                getYearSiteGalam ().equals (that.getYearSiteGalam ()) &&
+                Arrays.equals (getListGalamObserv (), that.getListGalamObserv ());
     }
 
-    /**
-     * Overloaded Constructor
-     * @param nameofObservatory, String
-     * @param nameofCountryObserv, String
-     * @param yearSiteGalam, String
-     * @param listGalamObserv, Galamsey[]
-     */
-    public Observatory(String nameofObservatory, String nameofCountryObserv, String yearSiteGalam, Galamsey[] listGalamObserv) {
-        this.nameofObservatory = nameofObservatory;
-        this.nameofCountryObserv = nameofCountryObserv;
-        this.yearSiteGalam = yearSiteGalam;
-        this.listGalamObserv = listGalamObserv;
+    @Override
+    public String toString() {
+        return "Observatory{" +
+                "nameofObservatory='" + nameofObservatory + '\'' +
+                ", nameofCountryObserv='" + nameofCountryObserv + '\'' +
+                ", yearSiteGalam='" + yearSiteGalam + '\'' +
+                ", listGalamObserv=" + Arrays.toString (listGalamObserv) +
+                '}';
+    }
+
+    public int  largeGalamValRecorded(){
+
     }
 }
