@@ -145,7 +145,7 @@ public class Observatory {
     }
 
     /**
-     *
+     *Helper method
      * @param value
      * @return
      */
