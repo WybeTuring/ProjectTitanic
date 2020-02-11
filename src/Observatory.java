@@ -185,7 +185,7 @@ public class Observatory {
     }
 
     /**
-     *
+     *Returns the largest
      * @return
      */
     public int largestGalamValueRec(){
