@@ -9,8 +9,8 @@ import java.util.Arrays;
 /**
  * Observatory class with fields, methods and constructor to store and retrieve
  * the name of the observatory, the name of the country in which it is located, the year in which
- * “galamsey” observations started, the area covered by the observatory (in square kilometers) and a list of
- * “galamsey” events that it has recorded.
+ * galamsey observations started, the area covered by the observatory (in square kilometers) and a list of
+ * galamsey events that it has recorded.
  *
  * It also returns;
  * The largest “galamsey” colour value recorded by the observatory.
@@ -145,7 +145,7 @@ public class Observatory {
     }
 
     /**
-     *
+     *Helper method
      * @param value
      * @return
      */
@@ -185,7 +185,7 @@ public class Observatory {
     }
 
     /**
-     *
+     *Returns the largest
      * @return
      */
     public int largestGalamValueRec(){

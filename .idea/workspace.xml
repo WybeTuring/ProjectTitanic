@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eab405b8-7374-4096-9ff7-b5c16548fb0b" name="Default Changelist" comment="Creation of Observatory Class for Version 1">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="ProjectId" id="1XdZHyrshP6zdUBKWbdIFxLmsTv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="MonitoringIO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MonitoringIO" />
+      <module name="ProjectTitanic" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MonitoringIO" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eab405b8-7374-4096-9ff7-b5c16548fb0b" name="Default Changelist" comment="" />
+      <created>1581377847644</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581377847644</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Creation of Observatory Class for Version 1">
+      <created>1581378010312</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581378010312</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Creation of Observatory Class for Version 1">
+      <created>1581378484395</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581378484395</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Creation of Observatory Class for Version 1">
+      <created>1581379743757</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581379743757</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Creation of Observatory Class for Version 1">
+      <created>1581380216005</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581380216005</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Creation of Observatory Class for Version 1">
+      <created>1581380679592</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581380679592</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Creation of Observatory Class for Version 1">
+      <created>1581382552749</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1581382552749</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Creation of Observatory Class for Version 1">
+      <created>1581384050388</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1581384050388</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Creation of Observatory Class for Version 1, Karl see">
+      <created>1581385142192</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581385142192</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creation of Observatory Class for Version 1" />
+    <MESSAGE value="Creation of Observatory Class for Version 1, Karl see" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation of Observatory Class for Version 1, Karl see" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="103" key="#Project_Structure" timestamp="1581385370440">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="103" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1581385370440" />
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1581379941827">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1581379941827" />
+    <state x="385" y="39" key="CommitChangelistDialog2" timestamp="1581385140499">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="385" y="39" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1581385140499" />
+    <state x="147" y="86" key="DiffContextDialog" timestamp="1581385094447">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="147" y="86" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1581385094447" />
+    <state x="361" y="178" key="Vcs.Push.Dialog.v2" timestamp="1581385146333">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="178" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1581385146333" />
+    <state x="465" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1581377859589">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="465" y="269" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1581377859589" />
+    <state x="578" y="362" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581384823723">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="578" y="362" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1581384823723" />
+  </component>
+</project>
