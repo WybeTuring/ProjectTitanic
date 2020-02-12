@@ -10,24 +10,30 @@ public class MonitoringIO {
 		Menu();		
 		System.out.println("Enter menu choice now: ");
 		int menu_choice = input.nextInt();
-		if(menu_choice == 1) {
-			getObservatories();
-			System.out.println("Choose another option: ");
-			Menu();
+		while(menu_choice >=1 && menu_choice <=3) {
+			if(menu_choice == 1) {
+				getObservatories();
+				System.out.println("Choose another option: ");
+				Menu();
+				System.out.println("new choice: ");
+				menu_choice = input.nextInt();
+			}
+			else if(menu_choice == 2){
+				getGalamseydetals();
+				System.out.println("Choose another option: ");
+				Menu();
+				System.out.println("new choice: ");
+				menu_choice = input.nextInt();
+			}
+			
+			else if(menu_choice == 3) {
+				Statistics();
+			}
+			else {
+				Exit();
+			}
 		}
-		else if(menu_choice == 2){
-			getGalamseydetals();
-			System.out.println("Choose another option: ");
-			Menu();
-		}
-		else if(menu_choice == 3) {
-			//soon
-			System.out.println("Choose another option: ");
-			Menu();
-		}
-		else {
-			Exit();
-		}
+
 	
 	}
 	/**
@@ -39,8 +45,7 @@ public class MonitoringIO {
 				+ "Enter 2 to enter 'galamsey' data\n"
 				+ "Enter 3 to provide monitory statistics on largest average 'galamsey', largest galamsey ever,\n"
 				+ "and all 'galamsey' with color value greater than a given number\n"
-				+ "Exit");
-	
+				+ "Enter 4 to Exit");
 	}
 	/**
 	 * 
@@ -55,8 +60,13 @@ public class MonitoringIO {
 		String year = input.nextLine();
 		System.out.println("Enter area covered in square kms: ");
 		String area = input.nextLine();
-		System.out.println("Enter galamsey events recorded: ");
-		String galamsey = input.nextLine();
+		System.out.println("Now, how many galamsey events are you recording: ");
+		int number = input.nextInt();
+		String[] galamseyevents = new String[number];
+		for(int i = 0; i < number; i++) {
+			System.out.println("Enter events: ");
+			galamseyevents[i] = input.nextLine();
+		}
 	}
 	/**
 	 * 
@@ -80,7 +90,23 @@ public class MonitoringIO {
 	public static void Exit() {
 		System.exit(0);
 	}
-	//method for averge color value ....soon
+	
+	public static void Statistics() {
+		System.out.println("Largest 'galamsey' recorded: " + new Observatory().largestGalamValueRec());
+		//System.out.println("Largest 'average' galamsey recorded: " + )--waiting for Zibah
+		System.out.println("Give an arbitary number: ");
+		int colourValue = input.nextInt();
+		if(colourValue > 0 && colourValue <3) {
+			System.out.println("List of galamsey events with colour values greater than " + colourValue + ": ");
+			for(int i = 3; i > colourValue; i--) {
+				if(new Galamsey().getColourValue() == i) {
+					System.out.println(Arrays.toString (new Observatory().getListGalamObserv()));
+				}
+			}
+		}
+		
+	}
+	
 		
 			
 			
