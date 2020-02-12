@@ -13,9 +13,9 @@ import java.util.Arrays;
  * galamsey events that it has recorded.
  *
  * It also returns;
- * The largest “galamsey” colour value recorded by the observatory.
- * The average “galamsey” colour value recorded at the observatory.
- * A list of all “galamsey” recorded at the observatory with a colour value greater than a
+ * The largest galamsey colour value recorded by the observatory.
+ * The average galamsey colour value recorded at the observatory.
+ * A list of all galamsey recorded at the observatory with a colour value greater than a
  * given/arbitrary number.
  */
 public class Observatory {
