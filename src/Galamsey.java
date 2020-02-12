@@ -13,6 +13,9 @@ public class Galamsey {
 	private Position position;
 	private int year;
 	
+	public Galamsey() {
+		
+	}
 	/**
 	 * Creates a Galamsey object. Note that there is only one constructor, as it is extremely important for all information to be available
 	 * when creating a Galamsey object. 
