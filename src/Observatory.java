@@ -4,8 +4,11 @@
  * @author: Kweku Andoh Yamoah(71712022)
  */
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Objects;
 
 /**
@@ -143,6 +146,7 @@ public class Observatory {
                 ", listGalamObserv=" + listGalamObserv +
                 '}';
     }
+    
 
     /**
      *Helper method
@@ -151,8 +155,10 @@ public class Observatory {
      */
     private int returnCount(int value){
         int count = 0;
-        for(int i = 0; i < listGalamObserv.size (); i++){
-            if(listGalamObserv.get (i).getColourValue () == value){ count ++ ;}
+        for (Galamsey galamsey : listGalamObserv) {
+            if (galamsey.getColourValue () == value) {
+                count++;
+            }
         }
 
         return count;
@@ -185,14 +191,50 @@ public class Observatory {
     }
 
     /**
+     * A personal Comparator to return the minimum colour value
+     * between two galamsey objects.
+     */
+    public class MyComparator implements Comparator<Galamsey> {
+        public int compare(@NotNull Galamsey o1, @NotNull Galamsey o2){
+            return Math.min (o1.getColourValue (),o2.getColourValue ());
+        }
+    }
+
+    /**
      *Returns the largest
      * @return
      */
-    public int largestGalamValueRecV1(){
-        return Math.max (countofGalamGreen (),Math.max (this.countofGalamYellow (),this.countofGalamBrown ()));
+    public int largestGalamValueRec(){
+        listGalamObserv.sort (new MyComparator ());
+        return listGalamObserv.get (-1).getColourValue ();
     }
 
-    public int largestGalamValueRecV2(){
-        return 0;
+    public double averageGalamColourValue() {
+        double sum = 0;
+        int count = 0;
+        for (Galamsey galamsey : listGalamObserv) {
+            count++;
+            sum += galamsey.getColourValue ();
+        }
+        return  sum / count;
     }
+
+    public ArrayList<Galamsey> eventsGreaterThanNo(int arbitraryNumber ) {
+        ArrayList<Galamsey> listofEvents = new ArrayList<> ();
+        if (arbitraryNumber <= 3) {
+            System.out.println ("IllegalArgumentException :The colour values currently defined are from 1-3,please enter a number from 0 to" +
+                                        " this range.");
+            eventsGreaterThanNo (arbitraryNumber);
+        } else {
+            int i = 0;
+            while (i < listofEvents.size()) {
+                if (listGalamObserv.get (i).getColourValue () > arbitraryNumber) {
+                    listofEvents.add (listGalamObserv.get (i));
+                }
+                i++;
+            }
+        }
+        return listofEvents;
+    }
+
 }
