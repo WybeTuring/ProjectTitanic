@@ -1,5 +1,6 @@
 package galamsey;
 
+// Importing the necessary libraries.
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -122,8 +123,8 @@ public class MonitoringIO {
 	
 	/**
 	 * This function helps us to read the information about observatories from the text file and create observatory objects.
-	 * @param fileName
-	 * @return
+	 * @param fileName The name of the file in which the observatory information is found.
+	 * @return An arrayList of observatory classes that is a representation of the data being held in the file.
 	 * @throws IOException
 	 */
 		
@@ -151,9 +152,9 @@ public class MonitoringIO {
 	
 	
 	/**
-	 * This method reads the galamsey events and returns an arraylist of string arrays holding the information. 
-	 * @param fileName
-	 * @return
+	 * This method reads the galamsey events.  
+	 * @param fileName The name of the file that contains the information about the Galamsey information.
+	 * @return Returns an arraylist of string arrays holding the information.
 	 * @throws IOException
 	 */
 	public ArrayList<String[]> loadGalamseyEvents(String fileName) throws IOException{
@@ -217,7 +218,8 @@ public class MonitoringIO {
 	
 
     /**
-	 * This method prints the features as menu to the user
+	 * This method prints the features as menu to the user. It is important to have this functionality as a function, since
+	 * it is widely employed throughout the program.
 	 */
 	public void Menu() {
 		System.out.println("\n\nKindly choose from amongst the following options\n"
@@ -229,7 +231,8 @@ public class MonitoringIO {
 	}
 	
 	/**
-	 * This method allows the user to enter observatory data
+	 * This method allows the user to enter observatory data. Placing the information in a method is a good idea, as it
+	 * is widely employed throughout the program.
 	 */
 	public Observatory obtainObservatoriesData() {
 		Scanner input = new Scanner(System.in);
@@ -248,7 +251,10 @@ public class MonitoringIO {
 	}
 	
 	/**
-	 * This method allows the user to enter Galamsey data
+	 * This method enables the user to input information about the Galamsey activity recorded. 
+	 * @return An array of strings that represents the data entered by the user. It is considered more appropriate to return 
+	 * the user input in this manner, as it is important at all times to have references to the observatory that recorded any
+	 * instance of Galamsey.
 	 */
 	public String[] obtainGalamseyData() {
 		

@@ -22,7 +22,10 @@ import com.sun.istack.internal.NotNull;
  * The average galamsey colour value recorded at the observatory.
  * A list of all galamsey recorded at the observatory with a colour value greater than a
  * given/arbitrary number.
+ * 
+ * 
  */
+
 public class Observatory {
     private String nameofObservatory;
     private String countryName;
@@ -38,10 +41,10 @@ public class Observatory {
 
     /**
      * Overloaded Constructor
-     * @param nameofObservatory, String
-     * @param countryName, String
-     * @param yearSiteGalam, String
-     * @param listGalamObserv, Galamsey[]
+     * @param nameofObservatory, A string that holds the name of the observatory String.
+     * @param countryName,  A string that holds the country name.
+     * @param yearSiteGalam, An integer representing the year in which the observatory was started.
+     * @param listGalamObserv, An ArrayList that holds the cases of identified cases of Galamsey cases.
      */
     public Observatory(String nameofObservatory, String countryName, int yearSiteGalam, double area, ArrayList<Galamsey> listGalamObserv) {
         this.nameofObservatory = nameofObservatory;
@@ -51,13 +54,26 @@ public class Observatory {
         this.listGalamObserv = listGalamObserv;
     }
 
+    /**
+     * A third constructor that takes into account the fact that most observatories will be created before the list
+     * of Galamsey events they register is established.
+     * @param nameofObservatory A string that holds the name of the observatory String.
+     * @param countryName, A string that holds the country name.
+     * @param yearSiteGalam, An integer representing the year in which the observatory was started.
+     * @param area An ArrayList that holds the cases of identified cases of Galamsey cases.
+     */
     public Observatory(String nameofObservatory, String countryName, int yearSiteGalam, double area) {
         this.nameofObservatory = nameofObservatory;
         this.countryName = countryName;
         this.startingYear = yearSiteGalam;
         this.areaCovered = area;
     }
-    
+ 
+    /**
+     * This constructor allows for observatories to be created when only their names are known. The advantage of doing this
+     * is evident when users try to insert Galamsey events, and cite observatories that does not exist at the time.
+     * @param nameofObservatory
+     */
     public Observatory(String nameofObservatory) {
     	this.nameofObservatory = nameofObservatory;
         this.countryName = "LOREM IPSUM";
@@ -66,76 +82,82 @@ public class Observatory {
     }
     
     /**
-	 * @return the nameofObservatory
+	 * @return Gets the name of the observatory.
 	 */
 	public String getNameofObservatory() {
 		return nameofObservatory;
 	}
 
 	/**
-	 * @param nameofObservatory the nameofObservatory to set
+	 * Sets the name of the observatory to a given value. 
+	 * @param nameofObservatory The name of the observatory we will like to set.
 	 */
 	public void setNameofObservatory(String nameofObservatory) {
 		this.nameofObservatory = nameofObservatory;
 	}
 
 	/**
-	 * @return the countryName
+	 * @return The country in which the given observatory operates. 
 	 */
 	public String getCountryName() {
 		return countryName;
 	}
 
 	/**
-	 * @param countryName the countryName to set
+	 * Sets the country of operation for a given observatory.
+	 * @param  countryName The name of the desired country. 
 	 */
 	public void setCountryName(String countryName) {
 		this.countryName = countryName;
 	}
 
 	/**
-	 * @return the startingYear
+	 * @return Gets the year in which the obsevatory in question began work. 
 	 */
 	public int getStartingYear() {
 		return startingYear;
 	}
 
 	/**
-	 * @param startingYear the startingYear to set
+	 * Sets the year in which the observatory started work. 
+	 * @param startingYear, a integer that represents the year we will like to set. 
 	 */
 	public void setStartingYear(int startingYear) {
 		this.startingYear = startingYear;
 	}
 
 	/**
-	 * @return the areaCovered
+	 * @return Gets the area covered by the observatory. 
 	 */
 	public double getAreaCovered() {
 		return areaCovered;
 	}
 
 	/**
-	 * @param areaCovered the areaCovered to set
+	 * @param Sets the area covered by an observatory to a given value. 
 	 */
 	public void setAreaCovered(double areaCovered) {
 		this.areaCovered = areaCovered;
 	}
 
 	/**
-	 * @return the listGalamObserv
+	 * This method gets the list of galamsey events registered by a given observatory. 
+	 * @return An ArrayList of Galamsey events. 
 	 */
 	public ArrayList<Galamsey> getListGalamObserv() {
 		return listGalamObserv;
 	}
 
 	/**
-	 * @param listGalamObserv the listGalamObserv to set
+	 * This method sets the list of Galamsey cases observed to a particular, pre-defined list.
+	 * @param listGalamObserv The ArrayList we will like to define as the list of observed Galamsey objects.
 	 */
 	public void setListGalamObserv(ArrayList<Galamsey> listGalamObserv) {
 		this.listGalamObserv = listGalamObserv;
 	}
 
 	/**
+	 * Overrides the default hashCode method.
      *
      * @param o
      * @return
@@ -154,6 +176,9 @@ public class Observatory {
 		return result;
 	}
 
+    /**
+     * Overrides the default equals class from the Object class to enable the comparison of objects.
+     */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -185,7 +210,9 @@ public class Observatory {
 		return true;
 	}
    
-    
+    /**
+     * Overrides the toString() method of the Object class to enable convenient printing of objects of type observatory.
+     */
     @Override
     public String toString() {
         return "Observatory{" +
@@ -198,9 +225,11 @@ public class Observatory {
     
 
 	/**
-     *Helper method
-     * @param value
-     * @return
+     *Helper method.
+     *This method helps other methods to be able to count how many galamsey objects of their type have been identified by the 
+     *observatory. 
+     * @param value An integer value that will be used as a reference in counting and identifying the objects.
+     * @return Returns the integer count of a particular coulour value.
      */
     private int returnCount(int value){
         int count = 0;
@@ -214,8 +243,8 @@ public class Observatory {
     }
 
     /**
-     *
-     * @return
+     * This method helps us to count the number of cases that were identified with Green colours.
+     * @return The integer count of the green cases identified.
      */
     public int countofGalamGreen(){
         return  returnCount (1);
@@ -223,8 +252,9 @@ public class Observatory {
     }
 
     /**
-     *
-     * @return
+     *This method helps us to count the number of cases that were identified with Yellow colours.
+     * @return The integer count of the yellow cases identified.
+     
      */
     public int countofGalamYellow(){
         return  returnCount (2);
@@ -232,8 +262,9 @@ public class Observatory {
     }
 
     /**
-     *
-     * @return
+     *This method helps us to count the number of cases that were identified with Brown colours.
+     * @return The integer count of the brown cases identified.
+     
      */
     public int countofGalamBrown(){
         return  returnCount (3);
@@ -250,8 +281,8 @@ public class Observatory {
     }
 
     /**
-     *Returns the largest
-     * @return
+     * This method enables us to return the largest value recorded by an observatory.
+     * @return Returns and integer value that represents the largest value recorded by a given observatory.
      */
     public int largestGalamValueRec(){
         listGalamObserv.sort (new MyComparator ());
@@ -259,8 +290,8 @@ public class Observatory {
     }
 
     /**
-     * 
-     * @return
+     * This method enables the calculation of the average colour value recorded by a given observatory.
+     * @return A double that represents the average.
      */
     public double averageGalamColourValue() {
         double sum = 0;
@@ -273,9 +304,9 @@ public class Observatory {
     }
 
     /**
-     * 
-     * @param arbitraryNumber
-     * @return
+     * This method enables us to return a list of Galamsey objects that have colour values greater than an arbitrary number.
+     * @param arbitraryNumber An arbitrary integer.
+     * @return An ArrayList of Galamsey objects.
      */
     public ArrayList<Galamsey> eventsGreaterThanNo(int arbitraryNumber ) {
         ArrayList<Galamsey> listofEvents = new ArrayList<> ();
@@ -295,9 +326,10 @@ public class Observatory {
     }
     
     /**
-     * 
-     * @param obs
-     * @return
+     * This method allows us to add a given galamsey object to an already existing observatory class by adding the galamsey object to the 
+     * attribute that holds the list of galamsey objects.
+     * @param obs An object of type Galamsey.
+     * @return a boolean that is false if the Galamsey object was already in the list, and true if it was newly added.
      */
     public boolean addGalamseyEvent(Galamsey obs) {
     	
