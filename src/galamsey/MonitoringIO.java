@@ -116,7 +116,7 @@ public class MonitoringIO {
 				System.out.println("Thank you Benjamin and Dr Ebo :)");
 				System.exit(0);
 			}
-			;
+
 		}
 
 }
@@ -235,19 +235,40 @@ public class MonitoringIO {
 	 * is widely employed throughout the program.
 	 */
 	public Observatory obtainObservatoriesData() {
-		Scanner input = new Scanner(System.in);
-		System.out.println("Enter observatory details including: Name of observatory,Country, Year,Area covered");
-		System.out.println("Enter name of observatory: ");
-		String name = input.nextLine();
-		System.out.println("Enter country: ");
-		String country = input.nextLine();
-		System.out.println("Enter year: ");
-		int year = Integer.parseInt(input.nextLine());
-		System.out.println("Enter area covered in square kms: ");
-		double area = input.nextDouble();
-		Observatory details = new Observatory(name, country, year, area);
-		;
-		return details;
+		try {
+			Scanner input = new Scanner (System.in);
+			System.out.println ("Enter observatory details including: Name of observatory(String),Country(String)," +
+										" Year(Integer),Area covered(Decimal)");
+			System.out.println ("Enter name of observatory: ");
+			String name = input.nextLine ();
+			try{
+				Double check = Double.parseDouble(name);
+				System.out.println ("Name should be a String, number entered, try again");
+				return obtainObservatoriesData ();
+			}
+			catch (NumberFormatException e) {
+			}
+
+			System.out.println ("Enter country: ");
+			String country = input.nextLine ();
+			try{
+				Double check = Double.parseDouble(country);
+				System.out.println ("Name of the Country should be a String, number entered, try again");
+				return obtainObservatoriesData ();
+			}
+			catch (NumberFormatException e) {
+			}
+			System.out.println ("Enter year: ");
+			int year =  input.nextInt ();
+			System.out.println ("Enter area covered in square kms: ");
+			double area = input.nextDouble ();
+			Observatory details = new Observatory (name, country, year, area);
+			return details;
+		}
+		catch (Exception e) {
+			System.out.println ("User, you gave a wrong input format, please try again");
+			return obtainObservatoriesData ();
+		}
 	}
 	
 	/**
@@ -257,32 +278,47 @@ public class MonitoringIO {
 	 * instance of Galamsey.
 	 */
 	public String[] obtainGalamseyData() {
-		
-		Scanner input = new Scanner(System.in);
-		
-		System.out.println("Enter the name of the observatory that identified the galamsey: ");
-		String observatoryName = input.nextLine();
-		
-		System.out.println("Enter vegetation colour: ");
-		String vegetationColour = input.nextLine();
-		
-		System.out.println("Colour value: ");
-		int colourValue = input.nextInt();
-		
-		System.out.println("Enter longitude: ");
-		double longitude = input.nextDouble();
-		
-		System.out.println("Enter latitude: ");
-		double latitude = input.nextDouble();
-		
-		System.out.println("Enter year: ");
-		int year = input.nextInt();
-		
-		String[] toReturn = {observatoryName, String.valueOf(colourValue), vegetationColour, String.valueOf(latitude), String.valueOf(longitude),String.valueOf(year) };
-		;
-		
-		return toReturn;	
-		
+		try {
+			Scanner input = new Scanner (System.in);
+
+			System.out.println ("Enter the name of the observatory that identified the galamsey: ");
+			String observatoryName = input.nextLine ();
+			try {
+				Double check = Double.parseDouble (observatoryName);
+				System.out.println ("Name of the observatory should be a String, number entered, try again");
+				return obtainGalamseyData ();
+			} catch (NumberFormatException e) {
+			}
+
+			System.out.println ("Enter vegetation colour: ");
+			String vegetationColour = input.nextLine ();
+			try {
+				Double check = Double.parseDouble (vegetationColour);
+				System.out.println ("Vegetation Colour should be a String, number entered, try again");
+				return obtainGalamseyData ();
+			}
+			catch (NumberFormatException e) {}
+
+			System.out.println ("Colour value: ");
+			int colourValue = input.nextInt ();
+
+			System.out.println ("Enter longitude: ");
+			double longitude = input.nextDouble ();
+
+			System.out.println ("Enter latitude: ");
+			double latitude = input.nextDouble ();
+
+			System.out.println ("Enter year: ");
+			int year = input.nextInt ();
+
+			String[] toReturn = {observatoryName, String.valueOf (colourValue), vegetationColour, String.valueOf (latitude), String.valueOf (longitude), String.valueOf (year)};
+
+			return toReturn;
+		}
+		catch (Exception e) {
+			System.out.println ("User, you gave a wrong input format, please try again");
+			return obtainGalamseyData ();
+		}
 	}
 	
 	/**
