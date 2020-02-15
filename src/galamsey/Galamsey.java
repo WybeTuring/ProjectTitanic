@@ -2,6 +2,7 @@ package galamsey;
 /**
  * This class stores information about identified cases of galamsey.
  * It uses the Position to define a position in which the Galamsey was identified.
+ * Used to store and retrieve information about the vegetation colour, colour value,position and year.
  * @author wybeturing
  * @version 1.0
  *
@@ -13,12 +14,15 @@ public class Galamsey {
 	private Position position;
 	private int year;
 	
+	/**
+	 * Default constructor
+	 */
 	public Galamsey() {
 		
 	}
 	/**
-	 * Creates a Galamsey object. Note that there is only one constructor, as it is extremely important for all information to be available
-	 * when creating a Galamsey object. 
+	 * Overloaded Constructor
+	 * Refers the parameters to the instance variables above 
 	 * @param vegcol Specifies the colour of the vegetation. Can be green, yellow or brown. 
 	 * @param col Specifies the colour value of the vegetation, colour values are pre-fixed. 
 	 * @param pos Specifies the position at which the galamsey was identified. 
@@ -95,7 +99,9 @@ public class Galamsey {
 		this.year = year;
 	}
 	
-
+	/**
+	 * Overrides the default hashcode method
+	 */
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -106,6 +112,12 @@ public class Galamsey {
 		result = prime * result + year;
 		return result;
 	}
+	
+	/**
+	 * This method checks for the equality of Galamsey objects
+	 * @return A boolean that indicates whether or not the objects are equal
+	 * @param An object of type Object
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -131,6 +143,7 @@ public class Galamsey {
 			return false;
 		return true;
 	}
+	
 	/**
 	 * This method returns a string that can be printed on the screen to represent a Galamsey object.
 	 * @return Returns a string that will often be printed to the console. 

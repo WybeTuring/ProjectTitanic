@@ -2,17 +2,14 @@ package galamsey;
 import java.util.ArrayList;
 
 /**
- * this class holds information about all
- * observatories and has methods that returns the average, largest color and list 
- * of all observatories.
- * 
+ * This class holds information about all observatories.
+ * Has methods that return the observatory with the largest average galamsey colour value,
+ * Largest galamsey colour value ever recorded and 
+ * List of all galamsey recorded at a colour value greater than a given number.
  * @author Hephzibah Emereole
- *
  */
 	public class Monitoring {
 		ArrayList <Observatory> observatoryList = new ArrayList<Observatory>();
-		//ArrayList <Observatory> galamseyList = new ArrayList<Observatory>;
-		
 		
 		/**
 		 * default constructor
@@ -20,9 +17,11 @@ import java.util.ArrayList;
 		public Monitoring() {
 			
 		}
+		
 		/**
 		 * This is an overloaded constructor		
-		 * @param Observe
+		 * @param Observe is an arraylist containing list of observatories and
+		 * information about all observatories.
 		 */
 		public Monitoring(ArrayList<Observatory>  Observe) {
 			 this.observatoryList= Observe;
@@ -30,22 +29,25 @@ import java.util.ArrayList;
 		
 		
 		/**
+		 * Gets the list of observatories
 		 * @return the observatoryList
 		 */
 		public ArrayList<Observatory> getObservatoryList() {
 			return observatoryList;
 		}
+		
 		/**
+		 * sets the observatory list to a desired list
 		 * @param observatoryList the observatoryList to set
 		 */
 		public void setObservatoryList(ArrayList<Observatory> observatoryList) {
 			this.observatoryList = observatoryList;
 		}
-		/**
-		 * This is a method that identifies the largeAverage color value of the Observatory objects	
-		 * @returns the largest average value newObserv
-		 */
 		
+		/**
+		 * This method identifies the observatory with largest average colour value
+		 * @returns the Observatory object with the largest average colour value
+		 */
 		public Observatory largestAverageObservatory() {
 			Observatory newObserv = null;
 			double averageCol = 0;
@@ -60,12 +62,10 @@ import java.util.ArrayList;
 				
 				
 	    /**
-	     * this method loops through the array list of galamsey values and return the largest color value of 
-	     * the galamsey object
-	     * @return the largest  color value
+	     * The method returns the largest galamsey colour value ever recorded
+	     * @return an integer as the largest colour value
 	     */
-		
-	    public int largeColValue() {
+		public int largeColValue() {
 			int colVal =0;
 			for(Observatory e:observatoryList) {
 				for(Galamsey g:e.getListGalamObserv()) {
@@ -78,11 +78,10 @@ import java.util.ArrayList;
 		}
 		
 		
-		
 		/**
-		 * This is a method that loops through the list of observatory, galamsey objects and compares 
-		 * the color value of each galamsey object with an arbitrary number. It adds the 
-		 * @param number, which is an arbitrary
+		 * Takes an arbitrary number as input
+		 * Provides all galamsey events recorded with colour value greater than the arbitrary number
+		 * @param number, an arbitary number provided by the user
 		 * @returns the list of galamsey objects. 
 		 */
 		
@@ -100,7 +99,7 @@ import java.util.ArrayList;
 		/***
 		 * Adds a new observatory to an already existing list of observatories. 
 		 * @param newObservatory
-		 * @return
+		 * @return a boolean to indicate whether or not the addition was successful
 		 */
 		public boolean addNewObservatory(Observatory newObservatory) {
 			for(Observatory o:observatoryList) {
