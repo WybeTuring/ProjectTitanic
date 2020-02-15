@@ -1,0 +1,12 @@
+kumasi observatory,1,Green,-45.0,45.0,2006
+accra observatory,3,Brown,-43.65,-34.5,2007
+accra observatory,1,Green,-43.45,-34.15,2007
+accra observatory,2,Yellow,-43.0,-34.05,2008
+lapaz observatory,3,Brown,-34.45,78.7,2005
+lagos observatory,2,Yellow,89.0,67.9,2009
+yaounde observatory,3,Brown,56.78,160.7,2006
+bamenda observatory,2,Yellow,57.8,-179.67,2007
+lome observatory,3,Brown,-67.78,130.0,2008
+dome observatory,2,Yellow,57.78,-89.78,2009
+dakar observatory,1,Green,67.8,-98.68,2008
+Bombay Observatory,1,Green,-45.0,23.9,2018
