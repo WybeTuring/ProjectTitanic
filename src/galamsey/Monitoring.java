@@ -1,6 +1,5 @@
+package galamsey;
 import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.ListIterator;
 
 /**
  * this class holds information about all
@@ -29,12 +28,25 @@ import java.util.ListIterator;
 			 this.observatoryList= Observe;
 		}
 		
+		
+		/**
+		 * @return the observatoryList
+		 */
+		public ArrayList<Observatory> getObservatoryList() {
+			return observatoryList;
+		}
+		/**
+		 * @param observatoryList the observatoryList to set
+		 */
+		public void setObservatoryList(ArrayList<Observatory> observatoryList) {
+			this.observatoryList = observatoryList;
+		}
 		/**
 		 * This is a method that identifies the largeAverage color value of the Observatory objects	
 		 * @returns the largest average value newObserv
 		 */
 		
-		public Observatory largestAverage() {
+		public Observatory largestAverageObservatory() {
 			Observatory newObserv = null;
 			double averageCol = 0;
 			for (int i=0; i< observatoryList.size(); i++) {
@@ -74,7 +86,7 @@ import java.util.ListIterator;
 		 * @returns the list of galamsey objects. 
 		 */
 		
-		public ArrayList<Galamsey> getGalamseyObjects (int number){
+		public ArrayList<Galamsey> allGalamseyObjectsGreaterThan(double number){
 			ArrayList<Galamsey> allObserv = new ArrayList<Galamsey>();
 			for (Observatory e: this.observatoryList) {
 				for (Galamsey g: e.getListGalamObserv()) {
@@ -85,5 +97,19 @@ import java.util.ListIterator;
 			return allObserv;
 			}
 		
+		/***
+		 * Adds a new observatory to an already existing list of observatories. 
+		 * @param newObservatory
+		 * @return
+		 */
+		public boolean addNewObservatory(Observatory newObservatory) {
+			for(Observatory o:observatoryList) {
+				if(o.equals(newObservatory)) {
+					return false;
+				}
+			}
+			observatoryList.add(newObservatory);
+			return true;
+		}
 		
 }

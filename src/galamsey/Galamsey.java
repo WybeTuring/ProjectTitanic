@@ -1,7 +1,4 @@
-import org.jetbrains.annotations.NotNull;
-
-import java.util.Comparator;
-
+package galamsey;
 /**
  * This class stores information about identified cases of galamsey.
  * It uses the Position to define a position in which the Galamsey was identified.
@@ -98,24 +95,50 @@ public class Galamsey {
 		this.year = year;
 	}
 	
-	/**
-	 * Tests for equality amongst Galamsey objects. 
-	 * @param x The galamsey object with which we want to test for equality. 
-	 * @return Returns a boolean indicating whether or not the objects are equal. 
-	 */
-	public boolean equals(Galamsey x) {
-		return ((this.colourValue == x.getColourValue()) && (this.vegetationColour.equals(x.getVegetationColour()))
-				&& (this.position.equals(x.getPosition())) && (this.year == x.getYear()));
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + colourValue;
+		result = prime * result + ((position == null) ? 0 : position.hashCode());
+		result = prime * result + ((vegetationColour == null) ? 0 : vegetationColour.hashCode());
+		result = prime * result + year;
+		return result;
 	}
-	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Galamsey other = (Galamsey) obj;
+		if (colourValue != other.colourValue)
+			return false;
+		if (position == null) {
+			if (other.position != null)
+				return false;
+		} else if (!position.equals(other.position))
+			return false;
+		if (vegetationColour == null) {
+			if (other.vegetationColour != null)
+				return false;
+		} else if (!vegetationColour.equals(other.vegetationColour))
+			return false;
+		if (year != other.year)
+			return false;
+		return true;
+	}
 	/**
 	 * This method returns a string that can be printed on the screen to represent a Galamsey object.
 	 * @return Returns a string that will often be printed to the console. 
 	 */
 	public String toString() {
-		return ("The Galamsey case specifications are; Vegetation colour: " + this.vegetationColour + "  Colour Value: "
+		return ("Vegetation Colour: " + this.vegetationColour + "  Colour Value: "
 				+ this.colourValue + "  Position|| (Latitude: " + this.position.getLatitude() + "  Longitude: " + this.position.getLongitude()
-				+ " In the Year: " + this.year);
+				+ " Year: " + this.year);
 	}
 	
 }

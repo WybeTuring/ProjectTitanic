@@ -1,3 +1,4 @@
+package galamsey;
 /**
  * The position class helps to register a position by latitude and longitude
  * @author wybeturing
@@ -56,9 +57,7 @@ public class Position {
 	 * @return A boolean that indicates whether or not the two objects are equal. 
 	 */
 	
-	public boolean equals(Position x) {
-		return ((this.latitude == x.getLatitude()) && (this.longitude == x.getLongitude()));
-	}
+	
 	
 	/**
 	 * This method returns a string that can be printed on the screen to represent a position object.
@@ -66,6 +65,34 @@ public class Position {
 	 */
 	public String toString() {
 		return ("Position is Latitude: " + this.latitude + "  Longitude: " + this.longitude);
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		long temp;
+		temp = Double.doubleToLongBits(latitude);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		temp = Double.doubleToLongBits(longitude);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Position other = (Position) obj;
+		if (Double.doubleToLongBits(latitude) != Double.doubleToLongBits(other.latitude))
+			return false;
+		if (Double.doubleToLongBits(longitude) != Double.doubleToLongBits(other.longitude))
+			return false;
+		return true;
 	}
 	
 }
