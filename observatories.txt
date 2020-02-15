@@ -7,4 +7,4 @@ bamenda observatory,cameroon,1997,567.88
 lome observatory,togo,2000,567.78
 dome observatory,ghana,1998,687.7
 dakar observatory,senegal,2001,87.9
-Bombay Observatory,India,2008,456.0
+bombay observatory,india,2008,456.0

@@ -134,7 +134,7 @@ public class Observatory {
 	}
 
 	/**
-	 * @param Sets the area covered by an observatory to a given value. 
+	 * @param areaCovered the area covered by an observatory to a given value.
 	 */
 	public void setAreaCovered(double areaCovered) {
 		this.areaCovered = areaCovered;
@@ -159,7 +159,6 @@ public class Observatory {
 	/**
 	 * Overrides the default hashCode method.
      *
-     * @param o
      * @return
      */
     @Override
