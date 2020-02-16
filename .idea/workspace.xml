@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="eab405b8-7374-4096-9ff7-b5c16548fb0b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/galamsey/MonitoringIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/galamsey/MonitoringIO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581807821837</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Completed final codes, with exception handling.">
+      <created>1581857024852</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1581857024852</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -198,7 +206,8 @@
     <MESSAGE value="Day to Changes for the class" />
     <MESSAGE value="Day two to Changes for the Observatory" />
     <MESSAGE value="Completed final codes, with exception handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed final codes, with exception handling" />
+    <MESSAGE value="Completed final codes, with exception handling." />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed final codes, with exception handling." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="103" key="#Project_Structure" timestamp="1581385370440">
@@ -213,10 +222,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="516" y="305" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.864@0.0.1536.864" timestamp="1581553715438" />
-    <state x="385" y="39" key="CommitChangelistDialog2" timestamp="1581856939227">
+    <state x="385" y="39" key="CommitChangelistDialog2" timestamp="1581857021865">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="385" y="39" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1581856939227" />
+    <state x="385" y="39" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1581857021865" />
     <state x="147" y="86" key="DiffContextDialog" timestamp="1581773835897">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -245,10 +254,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="481" y="161" key="MultipleFileMergeDialog/0.0.1536.864@0.0.1536.864" timestamp="1581770892826" />
-    <state x="361" y="178" key="Vcs.Push.Dialog.v2" timestamp="1581772116312">
+    <state x="361" y="178" key="Vcs.Push.Dialog.v2" timestamp="1581857032871">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="178" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1581772116312" />
+    <state x="361" y="178" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1581857032871" />
     <state x="465" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1581770842570">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

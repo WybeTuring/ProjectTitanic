@@ -175,10 +175,11 @@ public class MonitoringIO {
 	}
 	
 	/**
-	 * 
-	 * @param centralMonitor
-	 * @param observatoryFileName
-	 * @param galamseyFileName
+	 * A method which helps us save the data gotten from observatories,
+	 * and galamsey events to their respective text files.
+	 * @param centralMonitor, takes in a type monitor that represent the current monitor which details we want t0 save.
+	 * @param observatoryFileName, takes a text file which contains a list of observatories
+	 * @param galamseyFileName, takes a text file which contains a list of observatories
 	 */
     public void saveCentralObservatoryData(Monitoring centralMonitor, String observatoryFileName, String galamseyFileName) {
 	    
