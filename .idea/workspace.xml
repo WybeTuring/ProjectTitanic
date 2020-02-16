@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eab405b8-7374-4096-9ff7-b5c16548fb0b" name="Default Changelist" comment="Day two to Changes for the Observatory">
+    <list default="true" id="eab405b8-7374-4096-9ff7-b5c16548fb0b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/galamsey.txt" beforeDir="false" afterPath="$PROJECT_DIR$/galamsey.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/observatories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/observatories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/galamsey/MonitoringIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/galamsey/MonitoringIO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +33,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Project Tiatanic GUI" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -185,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581772109777</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Completed final codes, with exception handling">
+      <created>1581807821837</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1581807821837</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -193,7 +197,8 @@
     <MESSAGE value="Creation of Observatory Class for Version 1" />
     <MESSAGE value="Day to Changes for the class" />
     <MESSAGE value="Day two to Changes for the Observatory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day two to Changes for the Observatory" />
+    <MESSAGE value="Completed final codes, with exception handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed final codes, with exception handling" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="103" key="#Project_Structure" timestamp="1581385370440">
@@ -208,10 +213,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="516" y="305" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.864@0.0.1536.864" timestamp="1581553715438" />
-    <state x="385" y="39" key="CommitChangelistDialog2" timestamp="1581807686166">
+    <state x="385" y="39" key="CommitChangelistDialog2" timestamp="1581856939227">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="385" y="39" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1581807686166" />
+    <state x="385" y="39" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1581856939227" />
     <state x="147" y="86" key="DiffContextDialog" timestamp="1581773835897">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -252,9 +257,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="498" y="338" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.864@0.0.1536.864" timestamp="1581549829204" />
-    <state x="578" y="362" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581807614857">
+    <state x="578" y="362" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581856828042">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="578" y="362" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1581807614857" />
+    <state x="578" y="362" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1581856828042" />
   </component>
 </project>

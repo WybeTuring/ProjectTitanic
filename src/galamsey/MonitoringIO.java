@@ -256,8 +256,7 @@ public class MonitoringIO {
 				System.out.println ("Name of the Country should be a String, number entered, try again");
 				return obtainObservatoriesData ();
 			}
-			catch (NumberFormatException e) {
-			}
+			catch (NumberFormatException e) {}
 			System.out.println ("Enter year: ");
 			int year =  input.nextInt ();
 			System.out.println ("Enter area covered in square kms: ");
@@ -287,8 +286,8 @@ public class MonitoringIO {
 				Double check = Double.parseDouble (observatoryName);
 				System.out.println ("Name of the observatory should be a String, number entered, try again");
 				return obtainGalamseyData ();
-			} catch (NumberFormatException e) {
 			}
+			catch (NumberFormatException e) {}
 
 			System.out.println ("Enter vegetation colour: ");
 			String vegetationColour = input.nextLine ();
