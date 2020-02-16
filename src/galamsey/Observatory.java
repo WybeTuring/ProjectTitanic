@@ -9,8 +9,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 
-import com.sun.istack.internal.NotNull;
-
 /**
  * Observatory class with fields, methods and constructor to store and retrieve
  * the name of the observatory, the name of the country in which it is located, the year in which
@@ -274,7 +272,7 @@ public class Observatory {
      * between two galamsey objects.
      */
     public class MyComparator implements Comparator<Galamsey> {
-        public int compare(@NotNull Galamsey o1, @NotNull Galamsey o2){
+        public int compare(Galamsey o1, Galamsey o2){
             return Math.max (o1.getColourValue (),o2.getColourValue ());
         }
     }
