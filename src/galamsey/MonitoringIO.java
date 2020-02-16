@@ -104,8 +104,7 @@ public class MonitoringIO {
 			}
 			
 			else if(menu_choice == 3) {
-				System.out.println("Enter an arbirary number: ");
-				double arbitraryValue = input.nextDouble();
+				double arbitraryValue = current.getArbitraryNumber();
 				current.Statistics(CentralObservatory,arbitraryValue);
 				current.Menu();
 				menu_choice = input.nextInt();
@@ -229,6 +228,21 @@ public class MonitoringIO {
 				+ "Enter 3 to provide monitory statistics on largest average 'galamsey', largest galamsey ever,\n\t"
 				+ "and all 'galamsey' with color value greater than a given number\n"
 				+ "Enter 4 to Exit");
+	}
+	
+	/**
+	 * This method enables the collection of an arbitrary number. The method will run till the user enters a number
+	 * @return The number entered by the user. 
+	 */
+	public double getArbitraryNumber() {
+		Scanner input = new Scanner(System.in);
+		try {
+			System.out.println("Please enter an arbitrary number (Must be a number please)");
+			double arbitraryNumber = Double.parseDouble(input.nextLine());
+			return arbitraryNumber;
+		}catch(Exception e) {
+			return getArbitraryNumber();
+		}
 	}
 	
 	/**
