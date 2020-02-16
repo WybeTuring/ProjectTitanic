@@ -1,5 +1,7 @@
 # ProjectTitanic
 ## Overall Design
+**The javadocs for this project can be read from [Read Javadocs](https://wybeturing.github.io/ProjectTitanic/galamsey/package-summary.html)**
+
 
 **The javadocs for the entire project can be read comfortable from [Read Javadocs](https://wybeturing.github.io/ProjectTitanic/galamsey/package-summary.html)**
 
