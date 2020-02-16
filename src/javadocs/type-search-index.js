@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"galamsey","l":"Galamsey"},{"p":"galamsey","l":"Monitoring"},{"p":"galamsey","l":"MonitoringIO"},{"p":"galamsey","l":"Observatory.MyComparator"},{"p":"galamsey","l":"Observatory"},{"p":"galamsey","l":"Position"}]
