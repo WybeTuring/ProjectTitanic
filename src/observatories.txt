@@ -1,0 +1,10 @@
+kumasi observatory,ghana,1989,234.5
+accra observatory,ghana,1990,4565.5
+lapaz observatory,ghana,2001,56.98
+lagos observatory,nigeria,1998,345.78
+yaounde observatory,cameroon,2000,98.45
+bamenda observatory,cameroon,1997,567.88
+lome observatory,togo,2000,567.78
+dome observatory,ghana,1998,687.7
+dakar observatory,senegal,2001,87.9
+bombay observatory,india,2008,456.0
