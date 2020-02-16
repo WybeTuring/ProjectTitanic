@@ -1,6 +1,8 @@
 # ProjectTitanic
 ## Overall Design
-** The javadocs for this project can be read from [Read Javadocs](https://wybeturing.github.io/ProjectTitanic/galamsey/package-summary.html) **
+**The javadocs for this project can be read from [Read Javadocs](https://wybeturing.github.io/ProjectTitanic/galamsey/package-summary.html)**
+
+
 This aim of this project is to design and build a software that enables policy makers and regulators to tract illegal mining (Hereafter referred to as Galamsey) across the world. The program is designed using object oriented design principles, and makes use of five primary classes, which include;
 - A Position class that holds the longitude and latitude of positions.
 - A Galamsey class that holds records of Galamsey events.
