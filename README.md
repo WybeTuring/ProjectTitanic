@@ -52,6 +52,6 @@ To run the version 1 of this project, the following steps should be followed.
 4. >javac Position.java Galamsey.java Observatory.java Monitoring.java MonitoringIO.java
 5. Navigate upwards to the directory ProjectTitan/src
 6. Run the following command;
-7. > java MonitoringIO
+7. > java galamsey.MonitoringIO
 
 NB. jdk8 has been used for development throughout this project. 
